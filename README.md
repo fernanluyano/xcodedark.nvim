@@ -1,8 +1,8 @@
 # Xcodedark Theme for Neovim
 
-A neovim theme that mimics xcodedark from xcode16. I was inspired by xcode theme as I thought it was super clean in my iOS development course in university, so I decided to make a version that is kind of accurate for my main languages (Go, Typescript, and hopefully Java soon). 
+A neovim theme that mimics xcodedark from xcode16. I was inspired by xcode theme as I thought it was super clean in my iOS development course in university, so I decided to make a version that is kind of accurate for my main languages (Go, Typescript, and hopefully Java soon).
 
-NOTE: This theme works best in transparent mode as shown in the screenshots. In order to get the same autocomplete menu, check my `blink-completion.lua` in [nvim dotfiles](https://github.com/V4N1LLA-1CE/dotfiles/tree/main/nvim)
+> **NOTE:** This theme works best in transparent mode as shown in the screenshots. For the best autocomplete experience with properly styled transparent menus, we highly recommend using [blink.cmp](https://github.com/saghen/blink.cmp) - the theme includes built-in integration that provides beautiful completion menus matching the Xcode aesthetic!
 
 ## Language Previews
 ### Go
@@ -40,6 +40,8 @@ NOTE: This theme works best in transparent mode as shown in the screenshots. In 
         lazygit = true,
         which_key = true,
         notify = true,
+        snacks = true,
+        blink = true,  -- blink.cmp completion menu
       },
       
       -- Font weight customization
@@ -98,6 +100,8 @@ require("xcodedark").setup({
     lazygit = true,          -- LazyGit integration
     which_key = true,        -- Which-key popup
     notify = true,           -- Notification popups
+    snacks = true,           -- Snacks.nvim picker
+    blink = true,            -- blink.cmp completion menu
   },
   
   -- Style customization
@@ -124,6 +128,10 @@ require("xcodedark").setup({
   transparent = true,
 })
 ```
+
+### blink.cmp Integration
+
+The theme includes built-in styling for [blink.cmp](https://github.com/saghen/blink.cmp). For configuration examples, see [`blink-completion.lua`](https://github.com/V4N1LLA-1CE/dotfiles/tree/main/nvim) in my dotfiles.
 
 ## Contributing
 
