@@ -150,15 +150,6 @@ Available colors to override can be found in [`lua/xcodedark/colors.lua`](lua/xc
 
 The theme includes built-in styling for [blink.cmp](https://github.com/saghen/blink.cmp). For configuration examples, see [`blink-completion.lua`](https://github.com/fraeso/dotfiles/tree/main/nvim) in my dotfiles.
 
-## Contributing
-
-Contributions are welcome! Please feel free to submit issues and pull requests.
-
-When reporting issues, please include:
-- Plugin manager and configuration
-- Screenshots if applicable
-- Minimal reproduction steps
-
 ## Acknowledgments
 
 Inspired by Xcode 16's Default Dark theme. Created during iOS development coursework when I fell in love with Xcode's clean syntax highlighting.
