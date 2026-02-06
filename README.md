@@ -40,7 +40,7 @@ A neovim theme that mimics xcodedark from xcode16. I was inspired by xcode theme
         which_key = true,
         notify = true,
         snacks = true,
-        blink = true,  -- blink.cmp completion menu
+        blink = true,
       },
 
       terminal_colors = true,
