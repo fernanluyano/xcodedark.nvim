@@ -28,9 +28,8 @@ A neovim theme that mimics xcodedark from xcode16. I was inspired by xcode theme
   priority = 1000,
   config = function()
     require("xcodedark").setup({
-      -- New color scheme with your specifications
       transparent = true, -- or false if you prefer solid background
-      
+
       integrations = {
         telescope = true,
         nvim_tree = true,
@@ -43,21 +42,7 @@ A neovim theme that mimics xcodedark from xcode16. I was inspired by xcode theme
         snacks = true,
         blink = true,  -- blink.cmp completion menu
       },
-      
-      -- Font weight customization
-      styles = {
-        comments = { italic = true }, 
-        keywords = { bold = true }, 
-        functions = {}, 
-        variables = {},   
-        strings = {}, 
-        booleans = { bold = true }, 
-        types = {}, 
-        constants = {}, 
-        operators = {}, 
-        punctuation = {}, 
-      },
-      
+
       terminal_colors = true,
     })
     vim.cmd.colorscheme("xcodedark")
@@ -73,10 +58,6 @@ use {
   config = function()
     require("xcodedark").setup({
       transparent = true,
-      styles = {
-        keywords = { bold = true }, -- Bold keywords by default
-        comments = { italic = true }, -- Italic comments, normal weight
-      }
     })
     vim.cmd.colorscheme("xcodedark")
   end
@@ -103,19 +84,11 @@ require("xcodedark").setup({
     snacks = true,           -- Snacks.nvim picker
     blink = true,            -- blink.cmp completion menu
   },
-  
-  -- Style customization
-  styles = {
-    comments = { italic = true },
-    keywords = {},
-    functions = {},
-    variables = {},
-    strings = {},
-  },
-  
+
   -- Additional options
-  terminal_colors = true,    -- Set terminal colors
-  transparent = false,       -- Transparent background
+  terminal_colors = true,          -- Set terminal colors
+  transparent = false,             -- Transparent background
+  color_overrides = {},            -- Override any color from the base palette
 })
 ```
 
